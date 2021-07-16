@@ -4,10 +4,11 @@ import math
 import time
 from copy import deepcopy
 
-T = 0
-step = 10
-DEL_LIMIT = 60
-SAN_LIMIT = 10
+## Constants
+T = 240             # Robot starts at 0400 hrs
+step = 10           # The database is updated every 10 minutes
+DEL_LIMIT = 60      # A visitor entry is deleted if the visitor is not detected for 60 minutes
+SAN_LIMIT = 10      # A visitor is offered sanitization if they have not been sanitized for 10 minutes
 
 ## Clear screen
 def clear():
@@ -23,18 +24,20 @@ ageCharLim = 3
 nameCharLim = 24
 timeCharLim =  4
 def value_format(bare, vType):
-  if vType = 0:
+  if vType == 0:
     vCharLim = nameCharLim
-  elif vType = 1:
+  elif vType == 1:
     vCharLim = ageCharLim  
-  elif vType = 2:
-    vCharLim = timeCharLim  
+  elif vType == 2:
+    vCharLim = timeCharLim 
+  if vType != 0:
+    bare = str(bare)  
   if len(bare) >= vCharLim: 
     return (bare, deepcopy(bare[:vCharLim]))
   val = deepcopy(bare)
   while len(val) < vCharLim:
-    val = val + ' '
-  return (bare, val)
+    val =  ' ' + val
+  return val
 ## Format database entry to list of printable strings
 ### entry = [Formatted-Name, Formatted-Age, Status, MED, Formatted-LD, Formatted-LS, Name, Age, LD, LS]
 def entry_format(inEntry):
@@ -44,10 +47,11 @@ def entry_format(inEntry):
 ### Display database to user
 def db_display(DB):
   clear()
+  print('                              T = ' + str(T))
   print(' ------------------------------------------------------------------------ ')
   print('| Name                     | Age | Status | MED | LAST_DETECT | LAST_SAN |')
   for entry in DB:
-    print('| '+entry[0]+' | '+entry[1]+' |      '+entry[2]+' |   '+entry[3]+' |        '+entry[4]+' |     '+entry[5]+' |')
+    print('| '+entry[0]+' | '+entry[1]+' |      '+entry[2]+' |   '+str(entry[3])+' |        '+entry[4]+' |     '+entry[5]+' |')
   print(' ------------------------------------------------------------------------ ')
 
 ## Remove visitor entry after DEL_LIMIT minutes
@@ -68,13 +72,13 @@ def meet_person(DB, name):
     entryNum += 1
   if DB[entryNum][9] < T - SAN_LIMIT:
     DB[entryNum][9] = T
-    DB = sanitize_person()
+    DB = sanitize_person(DB)
   return DB
 
 ## Sanitize person
-def sanitize_person():
+def sanitize_person(DB):
   # Function to demonstrate the flow process of entering sanitization subroutine
-  pass
+  return DB
 
 ## Time-of-Day-based Medicine Update
 #### MED is set to 0 every morning (0730 hrs), afternoon (1300 hrs), and night (1930 hrs)
@@ -85,10 +89,25 @@ def medicine_tUpdate(DB):
         DB[entryNum][3] = 0
   return DB
 
+## Serving of Medicine to Patient
+def medicine_Serve(DB, name):
+  for entryNum, entry in enumerate(DB):
+    if entry[2] == 'P' and entry[6] == name:
+        DB[entryNum][3] = 1
+        break
+  return DB
+
 ## Run a custom event provided by the 
-def runEvent(event):
+def runEvent(DB, event):
   # Function to demonstrate the flow process of performing a requested custom event
-  pass
+  ## Example: Detection of Person
+  if event[1] == 'detect':
+    DB = meet_person(DB, event[2])
+  if event[1] == 'med_serve':
+    DB = medicine_Serve(DB, event[2])
+  if event[1] == 'add_visitor':
+    DB.append(entry_format(event[2]))
+  return DB
 
 def main(inputs, events):
   global T
@@ -99,7 +118,7 @@ def main(inputs, events):
   while True:
     if len(events) != 0:
       if events[0][0] <= T:
-        runEvent(events[0])
+        DB = runEvent(DB, events[0])
         events = events[1:]
     DB = visit_delete(DB)
     DB = medicine_tUpdate(DB)
@@ -107,13 +126,15 @@ def main(inputs, events):
     time_pass()
     if T > 1320:  ## Program runs until 2200 hrs
       break
-    time.sleep(5)
+    time.sleep(0.5)
 
 if __name__ == '__main__':
-  inputs = [['Aaron John Sabu', 22, 'P', ],
-            [      'Sabu John', 57, 'V', ],
-            [],
-            [],
-            [],]
-  events = []
+  inputs = [[        'Sabu John', 57, 'V', 0, 240, 240],
+            [  'Michael Collins', 55, 'P', 0, 240, 240],
+            [         'Joe Tait', 73, 'V', 0, 240, 240],
+            ['Francis Davenport', 71, 'P', 0, 240, 240],
+            [  'Lindsay Manchin', 45, 'P', 0, 240, 240],]
+  events = [[285, 'detect', 'Sabu John'],
+            [350, 'med_serve', 'Francis Davenport'],
+            [420, 'add_visitor', ['Lauren Mac', 29, 'V', 0, 420, 420]]]
   main(inputs, events)
