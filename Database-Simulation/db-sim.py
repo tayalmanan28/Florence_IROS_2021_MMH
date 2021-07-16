@@ -1,4 +1,3 @@
-from copy import deepcopy
 import os
 import math
 import time
@@ -8,7 +7,7 @@ from copy import deepcopy
 T = 240             # Robot starts at 0400 hrs
 step = 10           # The database is updated every 10 minutes
 DEL_LIMIT = 60      # A visitor entry is deleted if the visitor is not detected for 60 minutes
-SAN_LIMIT = 10      # A visitor is offered sanitization if they have not been sanitized for 10 minutes
+SAN_LIMIT = 20      # A visitor is offered sanitization if they have not been sanitized for 20 minutes
 
 ## Clear screen
 def clear():
@@ -72,6 +71,7 @@ def meet_person(DB, name):
     entryNum += 1
   if DB[entryNum][9] < T - SAN_LIMIT:
     DB[entryNum][9] = T
+    DB[entryNum][5] = value_format(T, 2)
     DB = sanitize_person(DB)
   return DB
 
