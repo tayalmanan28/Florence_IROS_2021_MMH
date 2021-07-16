@@ -1,0 +1,311 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.2768193027137433 -0.9191687113125359 -0.2801784320555902 4.638147311890728
+  position 11.649823757847436 7.348003148700307 5.501017572936042
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 10 20
+}
+Pedestrian {
+  translation 0.20060257988024632 1.3165454545454547 5.802410319520986
+  rotation 0 1 0 -2.896613990462929
+  name "pedestrian(9)"
+  controllerArgs [
+    "--trajectory= 5 9, 1 9, -2 -3"
+  ]
+  rightLegAngle 0.13963636363636367
+  rightLowerLegAngle 0.022909090909090966
+  rightFootAngle 0.06872727272727289
+  leftLegAngle -0.8974545454545455
+  leftLowerLegAngle 1.6012727272727274
+  leftFootAngle 0.047090909090909044
+  rightArmAngle 0.08327272727272708
+  rightLowerArmAngle -0.3458181818181819
+  rightHandAngle -0.18309090909090914
+  leftArmAngle -0.03054545454545428
+  leftLowerArmAngle -0.24836363636363656
+  leftHandAngle 0.01963636363636368
+  headAngle 0.07527272727272724
+}
+Table {
+  translation 4.24638 0 4.5134
+  rotation 0 1 0 1.57
+}
+Table {
+  translation 4.25045 0 -0.6066
+  rotation 0 1 0 1.57
+  name "table(1)"
+}
+Table {
+  translation 4.2542 0 -5.3066
+  rotation 0 1 0 1.57
+  name "table(2)"
+}
+Table {
+  translation -4.2858 0 -5.31343
+  rotation 0 1 0 1.57
+  name "table(3)"
+}
+Table {
+  translation -4.28983 0 -0.24343
+  rotation 0 1 0 1.57
+  name "table(4)"
+}
+Table {
+  translation -4.29344 0 4.17657
+  rotation 0 1 0 1.57
+  name "table(5)"
+}
+Table {
+  translation -4.29713 0 8.79657
+  rotation 0 1 0 1.57
+  name "table(6)"
+}
+Wall {
+  translation 0 0 9.91
+  size 10 2.4 0.2
+  appearance Roughcast {
+    colorOverride 1 0.8 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Wall {
+  translation 0 0 -10.09
+  name "wall(1)"
+  size 10 2.4 0.2
+  appearance Roughcast {
+    colorOverride 1 0.8 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Wall {
+  translation -5.05999 0 -0.0599931
+  rotation 0 1 0 1.5708
+  name "wall(2)"
+  size 20 2.4 0.2
+  appearance Roughcast {
+    colorOverride 1 0.8 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Wall {
+  translation 4.93001 0 -0.95
+  rotation 0 1 0 1.5708
+  name "wall(3)"
+  size 18 2.4 0.2
+  appearance Roughcast {
+    colorOverride 1 0.8 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Pedestrian {
+  translation -3.96822 0.75058 -2.52
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation -3.86822 0.750579 -7.41
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "pedestrian(3)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation 2.95178 0.750615 -7.27
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "pedestrian(4)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation 2.96178 0.750619 -2.59
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "pedestrian(5)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation 3.07178 0.750623 2.24
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "pedestrian(6)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation -3.96822 0.750583 2.06
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "pedestrian(1)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation -3.86822 0.750591 6.59
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "pedestrian(2)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Bed {
+  translation -3.6711 0 6.95417
+  rotation 0 1 0 3.14
+}
+Bed {
+  translation -3.66389 0 2.42417
+  rotation 0 1 0 3.14
+  name "bed(1)"
+}
+Bed {
+  translation -3.65661 0 -2.16583
+  rotation 0 1 0 3.14
+  name "bed(2)"
+}
+Bed {
+  translation -3.64866 0 -7.17583
+  rotation 0 1 0 3.14
+  name "bed(3)"
+}
+Bed {
+  translation 3.35 0 2.43
+  name "bed(4)"
+}
+Bed {
+  translation 3.35 0 -2.5
+  name "bed(5)"
+}
+Bed {
+  translation 3.35 0 -7.17
+  name "bed(6)"
+}
+Pedestrian {
+  translation -1.7039999999999997 1.3165454545454547 0
+  rotation 0 1 0 1.5707963267948966
+  name "pedestrian(7)"
+  controllerArgs [
+    "--trajectory=3 0, -3 0"
+  ]
+  shirtColor 0.25 0 0
+  enableBoundingObject TRUE
+  rightLegAngle 0.13963636363636367
+  rightLowerLegAngle 0.022909090909090966
+  rightFootAngle 0.06872727272727289
+  leftLegAngle -0.8974545454545455
+  leftLowerLegAngle 1.6012727272727274
+  leftFootAngle 0.047090909090909044
+  rightArmAngle 0.08327272727272708
+  rightLowerArmAngle -0.3458181818181819
+  rightHandAngle -0.18309090909090914
+  leftArmAngle -0.03054545454545428
+  leftLowerArmAngle -0.24836363636363656
+  leftHandAngle 0.01963636363636368
+  headAngle 0.07527272727272724
+}
+Pedestrian {
+  translation 0 1.2804 3.5407999999999995
+  rotation 0 1 0 3.141592653589793
+  name "pedestrian(8)"
+  controllerArgs [
+    "--speed=0.1"
+    "--trajectory=0 5, 0 -5"
+  ]
+  enableBoundingObject TRUE
+  rightLegAngle -0.8615999999999999
+  rightLowerLegAngle 0.9380727272727272
+  rightFootAngle -0.2534909090909091
+  leftLegAngle 0.34123636363636367
+  leftLowerLegAngle 0.21592727272727275
+  leftFootAngle 0.0732363636363636
+  rightArmAngle 0.6559272727272727
+  rightLowerArmAngle -0.4975272727272727
+  rightHandAngle 0.17061818181818184
+  leftArmAngle -0.6004363636363637
+  leftLowerArmAngle -0.345890909090909
+  leftHandAngle -0.0918181818181818
+  headAngle 0.05694545454545455
+}
+Tiago++ {
+  hidden translation_2 0 0 0.689574085088127
+  hidden rotation_2 0.9273089253913606 0.09850094807618788 0.3611034756376796 0
+  hidden translation_4 0.025076487953748373 -0.19393558266590905 -0.171
+  hidden rotation_4 0 0 1 2.2707420203984325
+  hidden translation_5 -0.125 0.018 -0.031
+  hidden rotation_5 0.9999999994172755 -2.413964272817234e-05 2.4139731398194048e-05 1.5708000005827234
+  hidden translation_6 -0.08660000000000004 -0.001499361810227771 -0.0015437511374766714
+  hidden rotation_6 0.707068156135756 -0.010313902360176678 0.7070701846329592 3.162223666837962
+  hidden translation_7 0.02 -0.026 -0.223
+  hidden rotation_7 -0.9987489164907575 0.035360956262504066 0.035358232149516416 1.5720511209733354
+  hidden translation_8 0.163 0.02 0.027
+  hidden rotation_8 0.7071067811490465 -7.261211426881284e-06 0.7071067811867663 3.1416145224228527
+  hidden translation_9 0 0 0.15
+  hidden rotation_9 -0.5773486762407923 0.5773510656590161 0.5773510656657724 2.0944023894282764
+  hidden translation_10 -0.055 0 0
+  hidden rotation_10 -0.5773514734388241 -0.5773478606734779 0.5773514734490396 2.0944036127830974
+  hidden translation_33 -7.615449641019326e-07 0 0
+  hidden rotation_33 0 0 1 3.1415
+  hidden translation_34 -4.11694717840061e-08 0 0
+  hidden rotation_34 0 0 -1 0
+  hidden translation_36 0.025076487945004552 0.19393558265552677 -0.171
+  hidden rotation_36 0 0 1 0.8708578438642706
+  hidden translation_37 0.125 0.018 -0.031
+  hidden rotation_37 0.9999999993822646 2.4854236435297437e-05 -2.4854327730173186e-05 1.5708000006177354
+  hidden translation_38 0.0872 0 -0.0015
+  hidden rotation_38 0.7070478361875681 0.010260330656008437 -0.7070912833272003 3.162196979871468
+  hidden translation_39 -0.02 -0.027 -0.222
+  hidden rotation_39 -0.9987489082209958 -0.03536107305385142 -0.035358348941217414 1.572051129253781
+  hidden translation_40 -0.162 0.02 0.027
+  hidden rotation_40 -8.940000245585366e-08 -0.9999999999999921 8.940033084100209e-08 1.570800000000008
+  hidden translation_41 0 0 0.15
+  hidden rotation_41 -0.5773518613999351 -0.5773494730862011 -0.5773494730794478 2.094397611682806
+  hidden translation_42 0.05499999999999968 0 0
+  hidden rotation_42 0.5773514730594743 0.5773478614321854 0.5773514730696865 2.09440361164503
+  hidden translation_65 -7.53956219245204e-07 0 0
+  hidden rotation_65 0 0 1 3.1415
+  hidden translation_66 -4.156761690926478e-08 0 0
+  hidden rotation_66 0 0 -1 0
+  hidden translation_67 0.182 0 0
+  hidden rotation_67 0 0 -1 0.6700004045284944
+  hidden translation_68 0.005 0 0.098
+  hidden rotation_68 0.9857702879210086 -0.11886302128626383 0.11886345789532211 1.5851314342415985
+  hidden translation_77 0 -0.202 0
+  hidden rotation_77 0.9999859843960139 0.0037437219829408184 -0.003743735734424767 1.5708140157022046
+  hidden translation_78 0 0.202 0
+  hidden rotation_78 0.9999854854496578 0.003809775805930119 -0.003809789800043749 1.5708145146556758
+  hidden translation_79 0.1695 -0.102 -0.0335
+  hidden rotation_79 0 0 1 0.0025868839719749154
+  hidden translation_80 -0.016 0 -0.04
+  hidden rotation_80 -0.9992131370987172 0.028045506511711317 0.028045609528798157 1.5715871725579502
+  hidden translation_81 0.1695 0.102 -0.0335
+  hidden rotation_81 0 0 1 0.0030303434268602455
+  hidden translation_82 -0.016 0 -0.04
+  hidden rotation_82 -0.9992034323892377 0.028217856509526358 0.028217960159691247 1.5715968849538093
+  hidden translation_83 -0.1735 -0.102 -0.0335
+  hidden rotation_83 0 0 0.9999999999999999 2.2173259418028493
+  hidden translation_84 -0.016 0 -0.04
+  hidden rotation_84 -0.9417444184688812 0.23782034687880757 0.23782122044332443 1.6307853465493258
+  hidden translation_85 -0.1735 0.102 -0.0335
+  hidden rotation_85 0 0 1 2.3198015971981145
+  hidden translation_86 -0.016 0 -0.04
+  hidden rotation_86 -0.941681069157501 0.23794573756271223 0.2379466115878153 1.630852495721307
+  translation -1.64554 -0.00295948 8.43913
+  rotation -0.5945260706995582 0.5486800652476654 0.5877830698976974 2.12797
+  controller "basic"
+}
+Glass {
+  translation -3.89 0.7389666460000002 4.41
+  rotation -0.012563253702134201 0.993726832790881 -0.11112671347529512 -9.663716435738054e-16
+}

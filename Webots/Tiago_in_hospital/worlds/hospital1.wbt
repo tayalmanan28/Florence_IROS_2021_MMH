@@ -1,0 +1,279 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.99940903425134 0.02780298131505839 0.02021327501417582 0.46081962264571685
+  position -0.5974476561786914 5.757123283504735 3.4148088649265045
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 10 20
+}
+Pedestrian {
+  translation 3.368 1.2441818181818183 9
+  rotation 0 1 0 -1.5707963267948966
+  name "pedestrian(9)"
+  controllerArgs [
+    "--trajectory= 5 9, 1 9, -2 -3"
+  ]
+  rightLegAngle -0.6414545454545454
+  rightLowerLegAngle 0.6363636363636366
+  rightFootAngle -0.2094545454545452
+  leftLegAngle 0.002727272727272051
+  leftLowerLegAngle 0.7367272727272735
+  leftFootAngle -0.011454545454545356
+  rightArmAngle 0.6247272727272726
+  rightLowerArmAngle -0.4176363636363637
+  rightHandAngle 0.11636363636363622
+  leftArmAngle -0.6479999999999998
+  leftLowerArmAngle -0.12218181818181803
+  leftHandAngle 0.050181818181818265
+  headAngle 0.1276363636363637
+}
+Table {
+  translation 4.24638 0 4.5134
+  rotation 0 1 0 1.57
+}
+Table {
+  translation 4.25045 0 -0.6066
+  rotation 0 1 0 1.57
+  name "table(1)"
+}
+Table {
+  translation 4.2542 0 -5.3066
+  rotation 0 1 0 1.57
+  name "table(2)"
+}
+Table {
+  translation -4.2858 0 -5.31343
+  rotation 0 1 0 1.57
+  name "table(3)"
+}
+Table {
+  translation -4.28983 0 -0.24343
+  rotation 0 1 0 1.57
+  name "table(4)"
+}
+Table {
+  translation -4.29344 0 4.17657
+  rotation 0 1 0 1.57
+  name "table(5)"
+}
+Table {
+  translation -4.29713 0 8.79657
+  rotation 0 1 0 1.57
+  name "table(6)"
+}
+Wall {
+  translation 0 0 9.91
+  size 10 2.4 0.2
+  appearance Roughcast {
+    colorOverride 1 0.8 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Wall {
+  translation 0 0 -10.09
+  name "wall(1)"
+  size 10 2.4 0.2
+  appearance Roughcast {
+    colorOverride 1 0.8 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Wall {
+  translation -5.05999 0 -0.0599931
+  rotation 0 1 0 1.5708
+  name "wall(2)"
+  size 20 2.4 0.2
+  appearance Roughcast {
+    colorOverride 1 0.8 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Wall {
+  translation 4.93001 0 -0.95
+  rotation 0 1 0 1.5708
+  name "wall(3)"
+  size 18 2.4 0.2
+  appearance Roughcast {
+    colorOverride 1 0.8 1
+    textureTransform TextureTransform {
+      scale 1 2.4
+    }
+  }
+}
+Pedestrian {
+  translation -3.96822 0.75058 -2.52
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation -3.86822 0.750579 -7.41
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "pedestrian(3)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation 3.72178 0.750616 -7.27
+  rotation 0.5773499358526729 0.5773529358523396 0.5773479358528951 -2.094395307179586
+  name "pedestrian(4)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation 3.82178 0.750631 -2.52
+  rotation 0.5773499358526729 0.5773529358523396 0.5773479358528951 -2.094395307179586
+  name "pedestrian(5)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation 3.07178 0.750623 2.24
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "pedestrian(6)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation -3.96822 0.750583 2.06
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "pedestrian(1)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Pedestrian {
+  translation -3.86822 0.750591 6.59
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "pedestrian(2)"
+  shirtColor 0.5 0.5 1
+  pantsColor 0.5 0.5 1
+}
+Bed {
+  translation -3.6711 0 6.95417
+  rotation 0 1 0 3.14
+}
+Bed {
+  translation -3.66389 0 2.42417
+  rotation 0 1 0 3.14
+  name "bed(1)"
+}
+Bed {
+  translation -3.65661 0 -2.16583
+  rotation 0 1 0 3.14
+  name "bed(2)"
+}
+Bed {
+  translation -3.64866 0 -7.17583
+  rotation 0 1 0 3.14
+  name "bed(3)"
+}
+Bed {
+  translation 3.35 0 2.43
+  name "bed(4)"
+}
+Bed {
+  translation 3.35 0 -2.5
+  name "bed(5)"
+}
+Bed {
+  translation 3.35 0 -7.17
+  name "bed(6)"
+}
+Pedestrian {
+  translation 1.368 1.2441818181818183 0
+  rotation 0 1 0 -1.5707963267948966
+  name "pedestrian(7)"
+  controllerArgs [
+    "--trajectory=3 0, -3 0"
+  ]
+  shirtColor 0.25 0 0
+  enableBoundingObject TRUE
+  rightLegAngle -0.6414545454545454
+  rightLowerLegAngle 0.6363636363636366
+  rightFootAngle -0.2094545454545452
+  leftLegAngle 0.002727272727272051
+  leftLowerLegAngle 0.7367272727272735
+  leftFootAngle -0.011454545454545356
+  rightArmAngle 0.6247272727272726
+  rightLowerArmAngle -0.4176363636363637
+  rightHandAngle 0.11636363636363622
+  leftArmAngle -0.6479999999999998
+  leftLowerArmAngle -0.12218181818181803
+  leftHandAngle 0.050181818181818265
+  headAngle 0.1276363636363637
+}
+Pedestrian {
+  translation -0.0720005 1.24418 -6.04
+  rotation 0 1 0 -3.1415853071795863
+  name "pedestrian(10)"
+  shirtColor 0.25 0 0
+  rightLegAngle -0.6414545454545454
+  rightLowerLegAngle 0.6363636363636366
+  rightFootAngle -0.2094545454545452
+  leftLegAngle 0.002727272727272051
+  leftLowerLegAngle 0.7367272727272735
+  leftFootAngle -0.011454545454545356
+  rightArmAngle 0.6247272727272726
+  rightLowerArmAngle -0.4176363636363637
+  rightHandAngle 0.11636363636363622
+  leftArmAngle -0.6479999999999998
+  leftLowerArmAngle -0.12218181818181803
+  leftHandAngle 0.050181818181818265
+  headAngle 0.1276363636363637
+}
+Pedestrian {
+  translation 0 1.3293454545454546 4.6736
+  rotation 0 1 0 3.141592653589793
+  name "pedestrian(8)"
+  controllerArgs [
+    "--speed=0.1"
+    "--trajectory=0 5, 0 -5"
+  ]
+  enableBoundingObject TRUE
+  rightLegAngle 0.17803636363636363
+  rightLowerLegAngle 0.06770909090909091
+  rightFootAngle 0.2031272727272727
+  leftLegAngle -0.9902545454545454
+  leftLowerLegAngle 1.6428727272727273
+  leftFootAngle 0.0022909090909090934
+  rightArmAngle -0.08632727272727272
+  rightLowerArmAngle -0.4354181818181818
+  rightHandAngle -0.2086909090909091
+  leftArmAngle 0.20305454545454543
+  leftLowerArmAngle -0.42116363636363635
+  leftHandAngle 0.058036363636363636
+  headAngle 0.04647272727272727
+}
+Tiago++ {
+  translation -0.17632085454172156 0.08328073851702389 -8.438445246883443
+  rotation 0.5641785495354568 0.5714809607235658 0.5959128088693333 -2.0761228396035603
+  controller "obstacle"
+}
+Glass {
+  translation -3.89 0.7389666460002807 4.41
+  rotation -0.05053533260472356 0.9951077851566418 -0.08489214380125415 -9.60972967070694e-16
+}
+WoodenBox {
+  translation 1.49375 0.284304 -6.73128
+  rotation -1.1360234657418501e-09 1 2.8736816212073856e-09 0.0603395860847793
+  mass 40
+}
+WoodenBox {
+  translation 1.1310298507054237 0.28430400000000006 -4.795340002177972
+  rotation -1.183492021103136e-10 0.9999999999999998 1.701576432037177e-08 -0.015264418127838481
+  name "wooden box(1)"
+  mass 40
+}
