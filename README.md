@@ -20,4 +20,4 @@ We have performed the robot simulations on the Webots platform to demonstrate th
 ### [Simulation Video](https://youtu.be/tGd-sEsKtbg)
 ### [Open Sourced Code](https://github.com/tayalmanan28/Florence_IROS_2021_MMH)
 
-<p align='center'>Created with :heart: by <a href="https://github.com/tayalmanan28">Manan Tayal</a>, <a href="https://github.com/aaronjohnsabu1999">Aaron John Sabu</a>, & <a href="https://github.com/rnambilakshmi">Nambilakshmi Ramachandran</a></p>
+<p align='center'>Created with :heart: by <a href="https://github.com/tayalmanan28">Manan Tayal</a>, <a href="https://github.com/aaronjohnsabu1999">Aaron John Sabu</a> & <a href="https://github.com/rnambilakshmi">Nambilakshmi Ramachandran</a></p>
